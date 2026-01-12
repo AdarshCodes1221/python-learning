@@ -402,8 +402,36 @@ print(x ^ y)  #Output: 14 (Binary: 1110)
 print(~x)     #Output: -11 (Binary: ...11110101)
 print(x << 2) #Output: 40 (Binary: 101000)
 
-------------------------------------------------------------------------------------
+******The Walrus Operator
+Python 3.8 introduced the := operator, known as the "walrus operator". It assigns values to variables as part of a larger expression:
 
+ExampleGet your own Python Server 
+numbers = [1, 2, 3, 4, 5]
+count = len(numbers)
+if count > 3:
+    print(f"List has {count} elements")
+
+if (count := len(numbers)) > 3:
+    print(f"List has {count} elements")
+
+-------------------------------------------------------------------------------------
+#****Operator Precedence
+Operator precedence describes the order in which operations are performed.
+
+Operator	Description	Example
+()	Parentheses (highest precedence)	(2 + 3) * 5 
+**	Exponentiation	2 ** 3 # what is 2 to the power of 3 #?
++x, -x	Unary plus and minus	-x  
+*, /, //, %	Multiplication, division, floor division, modulus	10 * 5
++, -	Addition and subtraction	10 + 5  
+<<, >>	Bitwise shift operators	x << 2
+&	Bitwise AND	x & y
+^	Bitwise XOR	x ^ y
+|	Bitwise OR	x | y
+#code example
+x = 10 + 3 * 2 ** 2
+print(x)  #Output: 22
+-----------------------------------------------------------------------------------
 
 
 '''
